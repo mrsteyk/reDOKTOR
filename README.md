@@ -6,6 +6,7 @@
 - Making 20x20 level, game has a stroke rendering huge chunks
 - Don't go overboard with editing the textures for the triggers, game can't really render most of them here
 - DON'T YOU EVER DARE TO FORCE 5-IN-ROW BONUS
+- Don't make gray balls metallic unless you want a true psychodelic experience of no textures
 
 ## Roadmap
 
