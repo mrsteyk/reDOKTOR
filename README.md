@@ -13,3 +13,4 @@
 - [ ] Edit hints
 - [ ] Figure out every field of an entity
 - [ ] Figure out why entities cluster size is always 1 and if it's possible to make a real schizo level
+- [ ] Figure out all fields of the level header besides the metallic features size and how much balls to spawn

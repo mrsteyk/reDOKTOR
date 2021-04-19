@@ -18,12 +18,12 @@ hint = lvl[4:4+hint_size].decode()
 print(f"hint: {hint}")
 lvl=lvl[4+hint_size:]
 
-wtf = struct.unpack("I", lvl[:4])[0]
+wtf, ballz_appear = struct.unpack("II", lvl[:8])
 lvl=lvl[4+4*4:]
 metallic_features = struct.unpack("I"*wtf, lvl[:4*wtf])
 if wtf < 9:
     metallic_features = tuple(list(metallic_features)+[0]*(9-wtf))
-print(metallic_features)
+print(metallic_features, ballz_appear)
 lvl=lvl[4*wtf +10*4*2:]
 
 wtf2_size = struct.unpack("I", lvl[:4])[0]
@@ -289,8 +289,8 @@ class Application(tk.Frame):
         metallic_features = [self.metallic_vars[i].get() for i in range(9)]
 
         #write metallic features
-        o += struct.pack("I", len(metallic_features))
-        o += b'\0'*4*4
+        o += struct.pack("II", len(metallic_features), int(self.number_ballz.get()))
+        o += b'\0'*4*(4-1) # figured out spawning
         o += struct.pack("I"*len(metallic_features), *metallic_features)
         o += b'\0'*10*4*2
 
@@ -369,6 +369,13 @@ class Application(tk.Frame):
 
         self.create_metallic_frame()
         self.metallic_frame.pack()
+
+        self.number_ballz_frame = tk.Frame(self.left_frame, relief=tk.RAISED, borderwidth=1)
+        self.number_ballz_frame.pack()
+        tk.Label(self.number_ballz_frame, text="Number of balls to appear").pack()
+        self.number_ballz = tk.Entry(self.number_ballz_frame)
+        self.number_ballz.insert(0, str(ballz_appear))
+        self.number_ballz.pack()
 
         self.bottom_frame = tk.Frame(self)
         self.bottom_frame.grid(row=1, column=1)
