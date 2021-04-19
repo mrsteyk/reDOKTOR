@@ -2,10 +2,10 @@
 Шизоредактор для шизоигры написанный шизом для шизов
 
 ## Things to avoid
-- Avoid creating situations when keys couldn't spawn or somethign like that, game will crash
+- Avoid creating situations when keys couldn't spawn or something like that, game will crash
 - Making 20x20 level, game has a stroke rendering huge chunks
 - Don't go overboard with editing the textures for the triggers, game can't really render most of them here
-- DON'T YOU EVER DARE TO FORCE 5-IN-ROW BONUS
+- DON'T YOU EVER DARE TO FORCE 5-IN-RAW/5-in-a-row BONUS
 - Don't make gray balls metallic unless you want a true psychodelic experience of no textures
 
 ## Roadmap
