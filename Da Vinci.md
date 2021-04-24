@@ -29,9 +29,10 @@
 | nHintLen          |                  DWORD                   | Length of hint string                                                      |
 | sHint             |             char\[nHintLen]              | Hint string (texture name)                                                 |
 | nMetallicLen      |                  DWORD                   | Ammount of balls to describe metallic features                             |
+| iSpawnBalls       |                  DWORD                   | Ammount of balls to spawn                                                  |
 | _                 |                char\[4*3]                | Padding                                                                    |
 | aMetallicFeatures |           DWORD\[nMetallicLen]           | Makes balls half-metallic if 1                                             |
-| _                 |              char\[10\*4\*2]               | Padding                                                                    |
+| _                 |             char\[10\*4\*2]              | Padding                                                                    |
 | nEntClusters      |                  DWORD                   | Ammount of item clusters                                                   |
 | aEntClusters      |        EntCluster\[nEntClusters]         | Entity clusters themselves                                                 |
 | aDimensions       |                DWORD\[2]                 | X and Y Dimensions (always 20,20 in real world, but engine allows dynamic) |
