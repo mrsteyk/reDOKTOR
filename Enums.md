@@ -32,12 +32,4 @@
 | 105 | FF XIII: Lightning Returns |
 | 106 | Holy Cross                 |
 
-## Entity type
-
-| id  | Name |
-| --- | ---- |
-| 0   | Lock |
-| 1   | Key  |
-| ?   | ?    |
-
 > **TODO: fill this one up?**
