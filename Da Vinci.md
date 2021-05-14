@@ -50,9 +50,9 @@
 
 | Name     |    Type     | Description                                         |
 | -------- | :---------: | --------------------------------------------------- |
-| iEntType |    DWORD    | IDK, but appears to be entity type                  |
+| bMovable |    DWORD    | Can this entity be moved?                           |
 | iPos     |  DWORD\[2]  | (X,Y) positions                                     |
-| iData3   |    DWORD    | IDK                                                 |
+| iEntID_qm|    DWORD    | Actual entity ID?                                   |
 | iData4   |    DWORD    | IDK                                                 |
 | iLockNum |    DWORD    | IDK, but appears to be number of the lock           |
 | iData6   |    DWORD    | IDK                                                 |
