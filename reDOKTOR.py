@@ -108,7 +108,7 @@ def get_string(ent: tuple):
     if ent[5]:
         metallic="M"
     if ent[3] == 100:
-        return "GAY"
+        return "PRIDE"
     elif ent[3] == 101:
         return "[]"
     elif ent[3] == 102:
